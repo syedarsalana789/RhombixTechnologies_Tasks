@@ -1,0 +1,132 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: hsl(240, 33%, 93%);
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    margin: 0; 
+}
+
+.header-image {
+    width: 80%; 
+    max-width: 400px; 
+    margin-bottom: 20px; 
+}
+
+.todo-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 90%; 
+    max-width: 400px; 
+    padding: 20px;
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #6c63ff;
+}
+
+button#add-task {
+    background-color: #6c63ff;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#add-task:hover {
+    background-color: #5848c2;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 8px;
+    background-color: #f9f9ff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.task-item:hover {
+    background-color: #f1f1ff;
+}
+
+.task-item span {
+    flex: 1;
+    font-size: 16px;
+    color: #333;
+    padding: 0 10px;
+    word-break: break-word;
+}
+footer {
+    background-color: #001f3f; 
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+}
+footer p {
+    margin: 0; 
+}
+
+.task-item button {
+    background-color: #ff6b6b;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.task-item button:hover {
+    background-color: #d95858;
+}
